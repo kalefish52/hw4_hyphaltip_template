@@ -5,9 +5,13 @@
 # them. Make this 10% an option in the program so it is easy to change
 # to 20%, etc.
 
-# example of how to read a gzip file
-import gzip
-import random
-#with gzip.open(gzipfile, 'rb') as f:
-#    for line in f:
+
+import Bio, random
+from Bio SeqIO
+from Bio.seq import Seq
+sequences=list(SeqIO.parse('yeast_RNASeq_1.fa',"fasta"))
+total_seqs_wanted=int(len(sequences)*0.1)
+SeqIO.write(random.sample(sequences, k=total_seqs_wanted), 'subsample.fa', "fas$
+
+
 
